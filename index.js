@@ -26,17 +26,27 @@ title.style.color = `white`;
 // // // // // // // // // // // //  // // // // // 
 
 // Make another element, this time a div that'll house the rest of our content
+const house = document.createElement(`div`);
 
 // Append it to the body
+body.appendChild(house);
 
 // Create an image element
+const image= document.createElement('img');
 
 // Set the source attribute of the image element to `https://i.imgur.com/5bMVQtj.png` and append it to the content div
-
+image.setAttribute('src',`https://i.imgur.com/5bMVQtj.png`);
+house.appendChild(image);
 // Center this image on the page using your favorite method. (I'm using flexbox, but you do you)
+house.style.display = `flex`;
+house.style.alignItems = `center`;
+house.style.justifyContent = `center`;
+
   // Note: don't forget to give your content div a height like I did 😳
+  house.style.height = `25vh`;
 
 // Now's a good time to style the body background too, I guess
+body.style.backgroundColor = `aquamarine`;
 
 // // // // // // // // // // // //  // // // // //
 // SWITCH: PLEASE HAND OFF CONTROL TO A PARTNER  //
