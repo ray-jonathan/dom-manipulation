@@ -61,7 +61,7 @@
   text.style.position = 'absolute';
   text.style.width = '200px';
   text.style.textAlign = 'center';
-  text.style.top = '42%';
+  text.style.top = '40%';
   text.style.left = '45%';
   content.appendChild(text);
 
@@ -72,7 +72,27 @@
 // Cool, now just trust me for this next one...
   // Set the inner HMTL of the paragraph element to the value of the fortune key in the fortune object
   text.innerHTML = fortune.fortune;
+  
+// // // // // // // // // // // //  // // // //
+// PAUSE: PLEASE WAIT FOR FURTHER INSTRUCTION //
+// // // // // // // // // // // //  // // // //
+  
+// Round Two- Code Along!
 
-  // // // // // // // // // // // //  // // // //
-  // PAUSE: PLEASE WAIT FOR FURTHER INSTRUCTION //
-  // // // // // // // // // // // //  // // // //
+const fortuneData = async () => {
+  const unreadyData = await fetch('http://my-little-cors-proxy.herokuapp.com/http://yerkee.com/api/fortune/platitudes/');
+  readyData = await unreadyData.json();
+  return readyData;
+}
+
+fortuneData().then(result => text.innerHTML = result.fortune);
+
+// Bonus Goal:
+// Make a button to generate a new fortune
+  const fortuneButton = document.createElement('button');
+  fortuneButton.innerHTML = 'New Fortune';
+  fortuneButton.addEventListener('click', () => {
+    fortuneData().then(result => text.innerHTML = result.fortune);
+  });
+  content.style.flexDirection = 'column';
+  content.appendChild(fortuneButton);
