@@ -31,17 +31,27 @@ elH1.style.fontSize = '45px';
 // // // // // // // // // // // //  // // // // // 
 
 // Make another element, this time a div that'll house the rest of our content
+const main = document.createElement('div');
 
 // Append it to the body
+body.appendChild(main);
 
 // Create an image element
+const img = document.createElement('img');
 
 // Set the source attribute of the image element to `https://i.imgur.com/5bMVQtj.png` and append it to the content div
+img.setAttribute('src', 'https://i.imgur.com/5bMVQtj.png');
+main.appendChild(img);
 
 // Center this image on the page using your favorite method. (I'm using flexbox, but you do you)
   // Note: don't forget to give your content div a height like I did 😳
+main.style.height = '80vh';
+main.style.display = `flex`;
+main.style.justifyContent = 'center';
+main.style.alignItems = 'center';
 
 // Now's a good time to style the body background too, I guess
+body.style.backgroundColor = 'lightBlue'
 
 // // // // // // // // // // // //  // // // // //
 // SWITCH: PLEASE HAND OFF CONTROL TO A PARTNER  //
