@@ -48,6 +48,7 @@ img.src = `https://i.imgur.com/5bMVQtj.png`;
 // Center this image on the page using your favorite method. (I'm using flexbox, but you do you)
   // Note: don't forget to give your content div a height like I did 😳
 houseContent.style.display="flex";
+houseContent.style.flexDirection='column'
 houseContent.style.justifyContent= 'center';
 houseContent.style.height='500px';
 img.style.height="50%";
@@ -62,16 +63,27 @@ houseContent.style.backgroundColor= 'lightblue';
 // // // // // // // // // // // //  // // // // // 
 
 // Create text in a paragraph element and get it to appear over the image element
-  // Text: 'The man who runs may fight again.\n\t\t-- Menander'
+const fortuneText = document.createElement('p')
+houseContent.appendChild(fortuneText)
+// Text: 'The man who runs may fight again.\n\t\t-- Menander'
+fortuneText.innerHTML = 'The man who runs may fight again.\n\t\t-- Menander'
   // Hint: This is going to require setting the content's position to relative first
+fortuneText.style.position= 'relative'
   // Hint: Additionally, I styled the paragraph element's width, text alignment, top and left positions
+  fortuneText.style.width = '450px'
+  fortuneText.style.fontSize = '24px'
+  fortuneText.style.textAlign = 'center'
+  fortuneText.style.bottom = '190px'
+  fortuneText.style.left = '75px'
 
 // Make an Object (a.k.a a 'dictionary') called `fortune` and add one key-value pair:
   // 'fortune' : 'The man who runs may fight again.\n\t\t-- Menander'
-
+const fortune = {
+  'fortune' : 'The man who runs may fight again.\n\t\t-- Menander'
+}
 // Cool, now just trust me for this next one...
   // Set the inner HMTL of the paragraph element to the value of the fortune key in the fortune object
-  
+  fortuneText.innerHTML = fortune.fortune
 // // // // // // // // // // // //  // // // //
 // PAUSE: PLEASE WAIT FOR FURTHER INSTRUCTION //
 // // // // // // // // // // // //  // // // //
