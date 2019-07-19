@@ -11,6 +11,10 @@
 
 // Customize the header title you made in some way, such as font family, style, or size. Color too! Get creative
 
+// // // // // // // // // // // //  // // // // //
+// SWITCH: PLEASE HAND OFF CONTROL TO A PARTNER  //
+// // // // // // // // // // // //  // // // // // 
+
 // Make another element, this time a div that'll house the rest of our content
 
 // Append it to the body
@@ -23,6 +27,10 @@
   // Note: don't forget to give your content div a height like I did 😳
 
 // Now's a good time to style the body background too, I guess
+
+// // // // // // // // // // // //  // // // // //
+// SWITCH: PLEASE HAND OFF CONTROL TO A PARTNER  //
+// // // // // // // // // // // //  // // // // // 
 
 // Create text in a paragraph element and get it to appear over the image element
   // Text: 'The man who runs may fight again.\n\t\t-- Menander'
