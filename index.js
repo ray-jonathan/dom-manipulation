@@ -24,18 +24,22 @@ h1.style.color ="#c35abc"
 // // // // // // // // // // // //  // // // // // 
 
 // Make another element, this time a div that'll house the rest of our content
-
+const div = document.createElement("div");
 // Append it to the body
-
+body.appendChild(div);
 // Create an image element
-
+const img = document.createElement("img")
 // Set the source attribute of the image element to `https://i.imgur.com/5bMVQtj.png` and append it to the content div
-
+img.setAttribute('src', 'https://i.imgur.com/5bMVQtj.png')
+div.appendChild(img);
 // Center this image on the page using your favorite method. (I'm using flexbox, but you do you)
-  // Note: don't forget to give your content div a height like I did 😳
+div.style.display = "flex";
+div.style.justifyContent = "center"
 
+// Note: don't forget to give your content div a height like I did 😳
+div.style.height = "200px"
 // Now's a good time to style the body background too, I guess
-
+body.style.backgroundColor = "lightblue";
 // // // // // // // // // // // //  // // // // //
 // SWITCH: PLEASE HAND OFF CONTROL TO A PARTNER  //
 // // // // // // // // // // // //  // // // // // 
