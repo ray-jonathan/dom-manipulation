@@ -61,13 +61,26 @@ body.style.backgroundColor = 'lightBlue'
   // Text: 'The man who runs may fight again.\n\t\t-- Menander'
   // Hint: This is going to require setting the content's position to relative first
   // Hint: Additionally, I styled the paragraph element's width, text alignment, top and left positions
-
-// Make an Object (a.k.a a 'dictionary') called `fortune` and add one key-value pair:
-  // 'fortune' : 'The man who runs may fight again.\n\t\t-- Menander'
-
-// Cool, now just trust me for this next one...
-  // Set the inner HMTL of the paragraph element to the value of the fortune key in the fortune object
+  const p = document.createElement("p");
+  main.appendChild(p);
+  const txtP = document.createTextNode('The man who runs may fight again.\n\t\t-- Menander');
+  p.appendChild(txtP);
+  p.style.position='relative';
+  p.style.left='-250px';
+  p.style.top = '-10px';
+  p.style.zIndex='2';
+  p.style.width='230px';
+  p.style.textAlign='center';
   
-// // // // // // // // // // // //  // // // //
-// PAUSE: PLEASE WAIT FOR FURTHER INSTRUCTION //
-// // // // // // // // // // // //  // // // //
+  
+  // Make an Object (a.k.a a 'dictionary') called `fortune` and add one key-value pair:
+    // 'fortune' : 'The man who runs may fight again.\n\t\t-- Menander'
+  const fortuneObj = { fortune: 'The man who runs may FIGHT again.\n\t\t-- Menander'};
+  
+  // Cool, now just trust me for this next one...
+    // Set the inner HMTL of the paragraph element to the value of the fortune key in the fortune object
+    console.log(p.innerHTML = fortuneObj['fortune']);
+    
+  // // // // // // // // // // // //  // // // //
+  // PAUSE: PLEASE WAIT FOR FURTHER INSTRUCTION //
+  // // // // // // // // // // // //  // // // //
