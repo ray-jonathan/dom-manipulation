@@ -79,12 +79,14 @@
   
 // Round Two- Code Along!
 
+// Write a function to get data from a server
 const fortuneData = async () => {
   const unreadyData = await fetch('http://my-little-cors-proxy.herokuapp.com/http://yerkee.com/api/fortune/platitudes/');
   readyData = await unreadyData.json();
   return readyData;
 }
 
+// Apply that data to the paragraph element's inner HTML
 fortuneData().then(result => text.innerHTML = result.fortune);
 
 // Bonus Goal:
