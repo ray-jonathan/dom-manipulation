@@ -3,33 +3,33 @@ const body = document.body;
 
 // Create a header element and append it to the body
 
-const header = document.createElement('header')
-body.appendChild(header)
+  const header = document.createElement('header')
+  body.appendChild(header)
 
 // Style the header with a height, custom background color, 
 
-header.style.height = "200px";
-header.style.backgroundColor = "blue";
+  header.style.height = "200px";
+  header.style.backgroundColor = "blue";
 
 // Create and add a h1 element to the header, add some text, and center it
-const title = document.createElement('h1')
-header.appendChild(title)
+  const title = document.createElement('h1')
+  header.appendChild(title)
 
-title.innerHTML = "hello beautiful";
-header.style.display = "flex";
+  title.innerHTML = "hello beautiful";
+  header.style.display = "flex";
 
 
 // No, like center it in the header. Middle of the middle!
 
-header.style.justifyContent = "center"
-header.style.alignItems = "center";
+  header.style.justifyContent = "center"
+  header.style.alignItems = "center";
 
 // Customize the header title you made in some way, such as font family, style, or size. Color too! Get creative
 
-title.style.fontFamily = "serif";
-title.style.fontStyle = "italic"
-title.style.fontSize = "3rem";
-title.style.color = "orange";
+  title.style.fontFamily = "serif";
+  title.style.fontStyle = "italic"
+  title.style.fontSize = "3rem";
+  title.style.color = "orange";
 
 // // // // // // // // // // // //  // // // // //
 // SWITCH: PLEASE HAND OFF CONTROL TO A PARTNER  //
