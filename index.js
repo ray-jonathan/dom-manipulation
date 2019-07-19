@@ -27,6 +27,7 @@
   header.style.fontSize = '3rem';
   header.style.color = '#bedbed';
   header.style.textShadow = '2px 2px 4px #616161';
+  // header.setAttribute('style', 'font-family:Arial,Helvetica,sans-serif; font-style:italic; font-size:3rem; color:#bedbed; text-shadow:2px 2px 4px #616161;');
 
 // Make another element, this time a div that'll house the rest of our content
   const content = document.createElement('div');
@@ -43,10 +44,11 @@
 
 // Center this image on the page using your favorite method. (I'm using flexbox, but you do you)
   // Note: don't forget to give your content div a height like I did 😳
-  content.style.display = 'flex';
-  content.style.justifyContent = 'center';
-  content.style.alignItems = 'center';
-  content.style.height = '80vh';
+  content.setAttribute('style', 'display:flex; justify-content:center; align-items:center; height:80vh;');
+    // content.style.display = 'flex';
+    // content.style.justifyContent = 'center';
+    // content.style.alignItems = 'center';
+    // content.style.height = '80vh';
 
 // Now's a good time to style the body background too, I guess
   body.style.backgroundColor = '#debdeb';
@@ -58,11 +60,12 @@
   content.style.position = 'relative';
   const text = document.createElement('p');
   text.innerHTML = 'The man who runs may fight again.\n\t\t-- Menander';
-  text.style.position = 'absolute';
-  text.style.width = '200px';
-  text.style.textAlign = 'center';
-  text.style.top = '40%';
-  text.style.left = '45%';
+  text.setAttribute('style', 'position:absolute; width:200px; text-align:center; top:40%; left:45%;');
+    // text.style.position = 'absolute';
+    // text.style.width = '200px';
+    // text.style.textAlign = 'center';
+    // text.style.top = '40%';
+    // text.style.left = '45%';
   content.appendChild(text);
 
 // Make an Object (a.k.a a 'dictionary') called `fortune` and add one key-value pair:
